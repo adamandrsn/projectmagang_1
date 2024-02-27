@@ -80,7 +80,9 @@ export default function Login() {
       <div className="flex w-full flex-col items-center justify-center md:w-2/4">
         <div className="w-full max-w-md space-y-8">
           <div>
-            <h1 className="text-2xl font-bold">Hello!</h1>
+            <h1 className="text-2xl font-bold">
+              Hello {session && session.user ? session.user.email : ''}!
+            </h1>
             <p className="mt-2 text-gray-700">
               Please sign in to your account.
             </p>
