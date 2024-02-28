@@ -34,7 +34,7 @@ const Sponsors = () => {
                 className="relative border-2 border-gray-300 p-14"
               >
                 <div>
-                  {film.attributes.title === 'Agak Laen' && (
+                  {film.id === 2 && (
                     <Image
                       src={AgakLaenImage}
                       alt="Agak Laen"
@@ -42,7 +42,7 @@ const Sponsors = () => {
                       height={224}
                     />
                   )}
-                  {film.attributes.title === 'Pasutri Gaje' && (
+                  {film.id === 3 && (
                     <Image
                       src={PasutriGajeImage}
                       alt="Pasutri Gaje"
@@ -50,7 +50,7 @@ const Sponsors = () => {
                       height={224}
                     />
                   )}
-                  {film.attributes.title === 'Demon Slayer' && (
+                  {film.id === 4 && (
                     <Image
                       src={DemonSlayerImage}
                       alt="Demon Slayer"
@@ -59,6 +59,7 @@ const Sponsors = () => {
                     />
                   )}
                 </div>
+
                 <div className="bg-opacity-75/75 absolute inset-x-0 bottom-0 bg-white p-4 text-center">
                   <h3 className="text-lg font-semibold">
                     {film.attributes.title}
